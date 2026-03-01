@@ -1,14 +1,7 @@
 {
-  "name": "@aisouler/gkd_subscription",
+  "name": "@anontokio/gkd-subscription",
   "version": "0.0.0",
   "type": "module",
-  "gkd": {
-    "outDir": "dist",
-    "file": "AIsouler_gkd.json5",
-    "versionFile": "AIsouler_gkd.version.json5",
-    "changelog": "CHANGELOG.md",
-    "README.md": "README.md"
-  },
   "scripts": {
     "postinstall": "simple-git-hooks",
     "format": "prettier --cache --write ./**/*.{js,cjs,mjs,ts,jsx,tsx,json}",
@@ -18,8 +11,8 @@
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm exec lint-staged",
-    "commit-msg": "pnpm exec commitlint --config commitlint.config.ts --edit ${1}",
-    "pre-push": "pnpm run check"
+    "pre-push": "pnpm run check",
+    "commit-msg": "pnpm exec commitlint --config commitlint.config.ts --edit ${1}"
   },
   "lint-staged": {
     "*.{js,cjs,mjs,ts,jsx,tsx}": [
@@ -41,12 +34,12 @@
     "@commitlint/cli": "20.2.0",
     "@commitlint/config-conventional": "20.2.0",
     "@commitlint/types": "20.2.0",
-    "@eslint/js": "9.39.1",
+    "@eslint/js": "10.0.1",
     "@gkd-kit/api": "0.8.0",
     "@gkd-kit/define": "0.0.1",
     "@gkd-kit/tools": "0.8.0",
     "@types/node": "25.0.0",
-    "eslint": "9.39.1",
+    "eslint": "10.0.2",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-unused-imports": "4.3.0",
     "json5": "2.2.3",
@@ -58,9 +51,10 @@
     "typescript-eslint": "8.49.0"
   },
   "volta": {
-    "node": "20.13.1"
+    "node": "24.13.0",
+    "pnpm": "10.30.2"
   },
-  "packageManager": "pnpm@10.25.0",
+  "packageManager": "pnpm@10.30.2",
   "engineStrict": true,
   "engines": {
     "node": ">=22"

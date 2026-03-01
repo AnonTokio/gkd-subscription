@@ -6,8 +6,10 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+.vscode/
+*.code-workspace
+
 .env
-.vscode
 .eslintcache
 
 .idea
