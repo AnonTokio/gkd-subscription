@@ -19,7 +19,7 @@ export default defineGkdSubscription({
   id: 518,
   name: 'AnonTokio的GKD订阅',
   version: 2,
-  author: 'AIsouler',
+  author: 'Anon Tokio',
   checkUpdateUrl: './gkd.version.json5',
   supportUri: 'https://github.com/AnonTokio/gkd-subscription',
   categories,
